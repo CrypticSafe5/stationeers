@@ -19,8 +19,13 @@ jal setLights
 j main
 
 initialize:
+s pressureRegIn On 1
 s pressureRegIn Lock 1
+s pressureRegOut On 1
 s pressureRegOut Lock 1
+s tempReg On 0
+s tempReg Lock 1
+s tempReg Mode 1
 j ra
 
 setLights:
