@@ -3,10 +3,10 @@ define pressureMax 52000 # Pa
 define tempMax 1500 # K
 
 # Devices
-alias pressureDial d0
+alias pressure d0
 alias pressureRegIn d1
 alias pressureRegOut d2
-alias tempDial d3
+alias temp d3
 alias tempReg d4
 alias personSensor d5
 
@@ -18,7 +18,6 @@ s pressureRegOut Lock 1
 s tempReg On 0
 s tempReg Lock 1
 s tempReg Mode 1
-j ra
 
 main:
 jal setPressure
@@ -40,7 +39,7 @@ sb HASH("StructureWallLight") On 0
 j ra
 
 setPressure:
-l r0 pressureDial Setting
+l r0 pressure Setting
 blt r0 pressureMax setTargetPressure
 beq r0 pressureMax setTargetPressure
 bgt r0 pressureMax setMaxPressure
@@ -56,7 +55,7 @@ s pressureRegOut Setting pressureMax
 j ra
 
 setTemp:
-l r0 tempDial Setting
+l r0 temp Setting
 blt r0 tempMax setTargetTemp
 beq r0 tempMax setTargetTemp
 bgt r0 tempMax setMaxTemp
