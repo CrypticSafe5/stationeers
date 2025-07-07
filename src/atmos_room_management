@@ -1,0 +1,71 @@
+# Constants
+define PRESSURE_MAX 40000 # TODO
+define TEMP_MAX 1500 # TODO
+
+# Devices
+alias PRESSURE_DIAL d0
+alias PRESSURE_REG d1
+alias TEMP_DIAL d2
+alias TEMP_REG d3
+alias PERSON_SENSOR d4
+
+main:
+jal set_pressure
+jal set_temp
+jal set_lights
+j main
+
+set_lights:
+# If person is detected, turn on lights
+l r0 PERSON_SENSOR count # TODO
+push ra
+bgtal r0 0 set_lights_on
+beqal r0 0 set_lights_off
+pop ra
+j ra
+
+set_lights_on:
+sb HASH("StructureWallLight") On 1 # TODO
+j ra
+
+set_lights_off:
+sb HASH("StructureWallLight") On 0 # TODO
+j ra
+
+set_pressure:
+# Check that reg is not above max
+# If value is not dial value, set
+l r0 PRESSURE_DIAL pressure # TODO
+push ra
+bltal r0 PRESSURE_MAX set_target_pressure
+beqal r0 PRESSURE_MAX set_target_pressure
+bgtal r0 PRESSURE_MAX set_max_pressure
+pop ra
+j ra
+
+set_target_pressure:
+s PRESSURE_REG pressure r0 # TODO
+j ra
+
+set_max_pressure:
+s PRESSURE_REG pressure MAX_PRESSURE # TODO
+j ra
+
+set_temp:
+# Check that temp is not above max
+# If value is not dial value, set
+l r0 TEMP_DIAL temperature # TODO
+push ra
+bltal r0 TEMP_MAX set_target_temp
+beqal r0 TEMP_MAX set_target_temp
+bgtal r0 TEMP_MAX set_max_temp
+pop ra
+j ra
+
+set_target_temp:
+s PRESSURE_REG pressure r0 # TODO
+j ra
+
+set_max_temp:
+s PRESSURE_REG pressure MAX_PRESSURE # TODO
+j ra
