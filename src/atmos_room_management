@@ -10,11 +10,18 @@ alias tempDial d3
 alias tempReg d4
 alias personSensor d5
 
+jal initialize
+
 main:
 jal setPressure
 jal setTemp
 jal setLights
 j main
+
+initialize:
+s pressureRegIn Lock 1
+s pressureRegOut Lock 1
+j ra
 
 setLights:
 # If person is detected, turn on lights
