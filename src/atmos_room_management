@@ -1,13 +1,14 @@
 # Constants
-define pressureMax 40000 # TODO
-define tempMax 1500 # TODO
+define pressureMax 52000 # kPa
+define tempMax 1500 # K
 
 # Devices
 alias pressureDial d0
-alias pressureReg d1
-alias tempDial d2
-alias tempReg d3
-alias personSensor d4
+alias pressureRegIn d1
+alias pressureRegOut d2
+alias tempDial d3
+alias tempReg d4
+alias personSensor d5
 
 main:
 jal setPressure
@@ -17,7 +18,7 @@ j main
 
 setLights:
 # If person is detected, turn on lights
-l r0 personSensor count # TODO
+l r0 personSensor Activate
 push ra
 bgtal r0 0 setLightsOn
 beqal r0 0 setLightsOff
@@ -25,17 +26,17 @@ pop ra
 j ra
 
 setLightsOn:
-sb HASH("StructureWallLight") On 1 # TODO
+sb HASH("StructureWallLight") On 1
 j ra
 
 setLightsOff:
-sb HASH("StructureWallLight") On 0 # TODO
+sb HASH("StructureWallLight") On 0
 j ra
 
 setPressure:
 # Check that reg is not above max
 # If value is not dial value, set
-l r0 pressureDial pressure # TODO
+l r0 pressureDial Setting
 push ra
 bltal r0 pressureMax setTargetPressure
 beqal r0 pressureMax setTargetPressure
@@ -44,17 +45,19 @@ pop ra
 j ra
 
 setTargetPressure:
-s pressureReg pressure r0 # TODO
+s pressureRegIn Setting r0
+s pressureRegOut Setting r0
 j ra
 
 setMaxPressure:
-s pressureReg pressure pressureMax # TODO
+s pressureRegIn Setting pressureMax
+s pressureRegOut Setting pressureMax
 j ra
 
 setTemp:
 # Check that temp is not above max
 # If value is not dial value, set
-l r0 tempDial temperature # TODO
+l r0 tempDial Setting
 push ra
 bltal r0 tempMax setTargetTemp
 beqal r0 tempMax setTargetTemp
@@ -63,9 +66,9 @@ pop ra
 j ra
 
 setTargetTemp:
-s tempReg pressure r0 # TODO
+s tempReg Setting r0
 j ra
 
 setMaxTemp:
-s tempReg pressure tempMax # TODO
+s tempReg Setting tempMax
 j ra
