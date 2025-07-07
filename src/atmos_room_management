@@ -1,71 +1,71 @@
 # Constants
-define PRESSURE_MAX 40000 # TODO
-define TEMP_MAX 1500 # TODO
+define pressureMax 40000 # TODO
+define tempMax 1500 # TODO
 
 # Devices
-alias PRESSURE_DIAL d0
-alias PRESSURE_REG d1
-alias TEMP_DIAL d2
-alias TEMP_REG d3
-alias PERSON_SENSOR d4
+alias pressureDial d0
+alias pressureReg d1
+alias tempDial d2
+alias tempReg d3
+alias personSensor d4
 
 main:
-jal set_pressure
-jal set_temp
-jal set_lights
+jal setPressure
+jal setTemp
+jal setLights
 j main
 
-set_lights:
+setLights:
 # If person is detected, turn on lights
-l r0 PERSON_SENSOR count # TODO
+l r0 personSensor count # TODO
 push ra
-bgtal r0 0 set_lights_on
-beqal r0 0 set_lights_off
+bgtal r0 0 setLightsOn
+beqal r0 0 setLightsOff
 pop ra
 j ra
 
-set_lights_on:
+setLightsOn:
 sb HASH("StructureWallLight") On 1 # TODO
 j ra
 
-set_lights_off:
+setLightsOff:
 sb HASH("StructureWallLight") On 0 # TODO
 j ra
 
-set_pressure:
+setPressure:
 # Check that reg is not above max
 # If value is not dial value, set
-l r0 PRESSURE_DIAL pressure # TODO
+l r0 pressureDial pressure # TODO
 push ra
-bltal r0 PRESSURE_MAX set_target_pressure
-beqal r0 PRESSURE_MAX set_target_pressure
-bgtal r0 PRESSURE_MAX set_max_pressure
+bltal r0 pressureMax setTargetPressure
+beqal r0 pressureMax setTargetPressure
+bgtal r0 pressureMax setMaxPressure
 pop ra
 j ra
 
-set_target_pressure:
-s PRESSURE_REG pressure r0 # TODO
+setTargetPressure:
+s pressureReg pressure r0 # TODO
 j ra
 
-set_max_pressure:
-s PRESSURE_REG pressure MAX_PRESSURE # TODO
+setMaxPressure:
+s pressureReg pressure pressureMax # TODO
 j ra
 
-set_temp:
+setTemp:
 # Check that temp is not above max
 # If value is not dial value, set
-l r0 TEMP_DIAL temperature # TODO
+l r0 tempDial temperature # TODO
 push ra
-bltal r0 TEMP_MAX set_target_temp
-beqal r0 TEMP_MAX set_target_temp
-bgtal r0 TEMP_MAX set_max_temp
+bltal r0 tempMax setTargetTemp
+beqal r0 tempMax setTargetTemp
+bgtal r0 tempMax setMaxTemp
 pop ra
 j ra
 
-set_target_temp:
-s PRESSURE_REG pressure r0 # TODO
+setTargetTemp:
+s tempReg pressure r0 # TODO
 j ra
 
-set_max_temp:
-s PRESSURE_REG pressure MAX_PRESSURE # TODO
+setMaxTemp:
+s tempReg pressure tempMax # TODO
 j ra
