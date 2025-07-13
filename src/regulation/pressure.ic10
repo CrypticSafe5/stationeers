@@ -1,0 +1,25 @@
+define pressureMax 52000 # Pa
+
+alias pressure d0
+alias pressureRegIn d1
+alias pressureRegOut d2
+
+main:
+jal setPressure
+j main
+
+setPressure:
+l r0 pressure Setting
+blt r0 pressureMax setTargetPressure
+beq r0 pressureMax setTargetPressure
+bgt r0 pressureMax setMaxPressure
+
+setTargetPressure:
+s pressureRegIn Setting r0
+s pressureRegOut Setting r0
+j ra
+
+setMaxPressure:
+s pressureRegIn Setting pressureMax
+s pressureRegOut Setting pressureMax
+j ra

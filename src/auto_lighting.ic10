@@ -1,0 +1,18 @@
+alias personSensor d0
+
+main:
+jal setTemp
+j main
+
+setLights:
+l r0 personSensor Activate
+bgt r0 0 setLightsOn
+beq r0 0 setLightsOff
+
+setLightsOn:
+sb HASH("StructureWallLight") On 1
+j ra
+
+setLightsOff:
+sb HASH("StructureWallLight") On 0
+j ra

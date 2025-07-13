@@ -1,0 +1,22 @@
+define tempMax 1500 # K
+
+alias temp d0 # memory
+alias tempReg d2 # ac
+
+main:
+jal setTemp
+j main
+
+setTemp:
+l r0 temp Setting
+blt r0 tempMax setTargetTemp
+beq r0 tempMax setTargetTemp
+bgt r0 tempMax setMaxTemp
+
+setTargetTemp:
+s tempReg Setting r0
+j ra
+
+setMaxTemp:
+s tempReg Setting tempMax
+j ra
