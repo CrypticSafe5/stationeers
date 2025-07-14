@@ -1,0 +1,152 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="Y4NhZCYvipgA46-YzcXt">
+        <mxGraphModel dx="1045" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-38" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="640" width="440" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="40" width="440" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-1" target="GuhuDiW7JihISR_eh4VA-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-1" value="furnace" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="80" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-2" target="GuhuDiW7JihISR_eh4VA-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-2" value="pressure regulator" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-3" value="back pressure regulator" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-6" target="GuhuDiW7JihISR_eh4VA-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=52.5;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-6" target="GuhuDiW7JihISR_eh4VA-10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-6" target="GuhuDiW7JihISR_eh4VA-18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-6" value="mixed tank" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="320" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-3" target="GuhuDiW7JihISR_eh4VA-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-10" target="GuhuDiW7JihISR_eh4VA-33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-10" value="ac" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="342" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-17" value="furnace" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="40" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-18" value="filter (CO2)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="560" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="GuhuDiW7JihISR_eh4VA-24" target="GuhuDiW7JihISR_eh4VA-26" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-24" target="GuhuDiW7JihISR_eh4VA-39" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-24" value="mixed tank" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="680" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-18" target="GuhuDiW7JihISR_eh4VA-24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-26" target="GuhuDiW7JihISR_eh4VA-33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-37" value="heat" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GuhuDiW7JihISR_eh4VA-34" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1579" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-26" value="ac" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="690" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-33" value="pipe heater" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="420" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=-15;entryPerimeter=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-33" target="GuhuDiW7JihISR_eh4VA-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-39" target="GuhuDiW7JihISR_eh4VA-42" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-39" value="volume pump" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="800" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-41" value="cooling and storage" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="640" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-42" target="GuhuDiW7JihISR_eh4VA-46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-42" value="filter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="920" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-43" value="tank" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="910" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-42" target="GuhuDiW7JihISR_eh4VA-43" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-46" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="1010" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-48" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;IC system 2&lt;/h1&gt;&lt;p&gt;AC will run until target temp is achieved, and then volume pump will empty the contents.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="640" width="180" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-49" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;IC system 1&lt;/h1&gt;&lt;p&gt;AC will run until target temp is achieved, and then volume pump will empty the contents.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="40" width="180" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-50" value="devices" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="160" width="140" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-51" value="back pressure regulator" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="GuhuDiW7JihISR_eh4VA-50" vertex="1">
+                    <mxGeometry y="30" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-52" value="pressure regulator" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="GuhuDiW7JihISR_eh4VA-50" vertex="1">
+                    <mxGeometry y="60" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-53" value="ac" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="GuhuDiW7JihISR_eh4VA-50" vertex="1">
+                    <mxGeometry y="90" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-54" value="pipe heater" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="GuhuDiW7JihISR_eh4VA-50" vertex="1">
+                    <mxGeometry y="120" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-55" value="devices" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="760" width="140" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-56" value="ac" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="GuhuDiW7JihISR_eh4VA-55" vertex="1">
+                    <mxGeometry y="30" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-57" value="volume pump" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="GuhuDiW7JihISR_eh4VA-55" vertex="1">
+                    <mxGeometry y="60" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-60" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Note&lt;/h1&gt;&lt;p&gt;T2 furnace will require setting the pumps to 100 to match the regulators&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="360" width="180" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="GuhuDiW7JihISR_eh4VA-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" parent="1" source="GuhuDiW7JihISR_eh4VA-18" target="GuhuDiW7JihISR_eh4VA-6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="180" y="590"/>
+                            <mxPoint x="180" y="373"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
