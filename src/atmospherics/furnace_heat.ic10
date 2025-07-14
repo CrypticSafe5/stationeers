@@ -1,0 +1,72 @@
+# Constants
+define pressureMax 59750000 # Pa
+define tempMax 1500 # K
+
+# Devices
+alias pressureTarget d0
+alias pressureRegIn d1
+alias pressureRegOut d2
+alias tempTarget d3
+alias tempAc d4
+alias tempHeater d5
+
+# Initialize
+# s pressureRegIn On 1
+# s pressureRegIn Lock 1
+# s pressureRegOut On 1
+# s pressureRegOut Lock 1
+# s tempReg On 0
+# s tempReg Lock 1
+# s tempReg Mode 1
+
+main:
+jal setPressure
+jal setTemp
+j main
+
+setPressure:
+l r0 pressureTarget Setting
+blt r0 pressureMax setTargetPressure
+beq r0 pressureMax setTargetPressure
+bgt r0 pressureMax setMaxPressure
+
+setTargetPressure:
+s pressureRegIn Setting r0
+s pressureRegOut Setting r0
+j ra
+
+setMaxPressure:
+s pressureRegIn Setting pressureMax
+s pressureRegOut Setting pressureMax
+j ra
+
+setTemp:
+l r0 tempTarget Setting
+bgt r0 tempMax useMaxTemp
+l r1 tempAc TemperatureInput
+blt r1 r0 setTempHeat
+beq r1 r0 setTempKeep
+bgt r1 r0 setTempCool
+
+useMaxTemp:
+s tempTarget Setting tempMax
+j setTemp
+
+setTempHeat:
+s tempAc Mode 0
+s tempAc On 0
+s tempHeater On 1
+j ra
+
+setTempCool:
+s tempAc On 1
+s tempAc Setting r0
+s tempAc Mode 1
+s tempHeater On 0
+j ra
+
+setTempKeep:
+s tempAc Mode 0
+s tempAc On 0
+s tempHeater On 0
+j ra
